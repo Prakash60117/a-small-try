@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link  rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="containeer">
+        <div class="header-text">
+          <h1>Its Ok Your concern really matter to me</h1>
+        </div>
+        <div class="gif_container">
+          <a href="https://imagetolink.com/ib/x7eGgJdfue"><img src="https://imagetolink.com/ib/x7eGgJdfue.gif" alt="cute animated gif"/></a>
+        </div>
+        <div>
+            <h1 class="header_text">try clicking No Once more</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="tiredButton" onclick="nextpage()">Tired</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()"
+        >
+          No
+        </button>
+        <script>
+            function nextpage() {
+              window.location.href = "tired.html";
+            }
+  
+            function moveButton() {
+              var x =
+                Math.random() *
+                (window.innerWidth -
+                  document.getElementById("noButton").offsetWidth);
+              var y =
+                Math.random() *
+                (window.innerHeight -
+                  document.getElementById("noButton").offsetHeight);
+              document.getElementById("noButton").style.left = `${x}px`;
+              document.getElementById("noButton").style.top = `${y}px`;
+            }
+          </script>
+        </div>
+      </div>
+    <audio autoplay>
+      <source src="Tu-Mera-Koyi-Na-Hoke-Bhi--Kuch-Lage_320(PagalWorld).mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>
